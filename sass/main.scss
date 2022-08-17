@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(utils/vars.scss);
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.wraper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #212121;
+    span {
+        color: #2196F3;
+    }
+}
+main {}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+.section {
+    padding: 94px 0;
+}
+footer {}
