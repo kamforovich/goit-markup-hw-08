@@ -1,45 +1,58 @@
 body, html {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
 * {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  text-decoration: none; }
+  text-decoration: none;
+  list-style: none; }
+
+p {
+  color: var(--dark); }
+
+h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 30px; }
 
 .wraper {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column; }
-
-header {
-  height: 80px;
-  background: var(--white); }
-
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  color: var(--black); }
-  .logo span {
-    color: var(--blue);
-    font-family: 'Raleway', sans-serif; }
-
-.main-nav__link {
-  font-weight: 500;
-  font-size: 40px;
-  color: var(--blue);
-  transition: var(--transition); }
-  .main-nav__link:hover {
-    color: var(--blue); }
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  padding-top: 60px; }
 
 .container {
   width: 100%;
-  max-width: 1200px; }
+  max-width: 1200px;
+  padding: 0 15px; }
 
 .section {
-  padding: 94px 0; }
+  padding: 60px 0; }
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0; } }
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  padding: 16px 25px;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: var(--transition);
+  display: block; }
+  .button:hover {
+    background-color: var(--blue-hover); }
 
 /*# sourceMappingURL=basic.css.map */
