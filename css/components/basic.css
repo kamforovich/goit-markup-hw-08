@@ -40,6 +40,27 @@ h2 {
 @media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0; } }
+footer {
+  background: #2F303A;
+  padding: 60px 0; }
+  footer-title {
+    color: var(--white); }
+  footer .logo {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center; }
+  footer address {
+    text-align: center;
+    width: 100%; }
+    footer address span {
+      color: var(--white); }
+    footer address a {
+      color: var(--light); }
+    footer address * {
+      margin-bottom: 8px;
+      display: block; }
+
 .button {
   font-weight: 700;
   font-size: 16px;

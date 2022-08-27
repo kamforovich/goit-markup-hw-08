@@ -53,7 +53,32 @@ main {}
         padding: 94px 0;
     }
 }
-footer {}
+
+footer {
+    background: #2F303A;
+    padding: 60px 0;
+    &-title {
+        color: var(--white);
+    }
+    &-social {}
+    &-subscribe {}
+    .logo {
+        color: var(--white);
+        text-align: center;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    address {
+        text-align: center;
+        width: 100%;
+        span {color: var(--white);}
+        a {color: var(--light);}
+        * {
+            margin-bottom: 8px;
+            display: block;
+        }
+    }
+}
 
 
 
