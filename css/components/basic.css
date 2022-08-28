@@ -40,40 +40,44 @@ h2 {
 @media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0; } }
-footer {
+.footer {
   background: #2F303A;
   padding: 60px 0; }
-  footer-title {
-    color: var(--white); }
-  footer .logo {
+  .footer .logo {
     color: var(--white);
-    text-align: center;
     margin-bottom: 20px;
+    display: block;
     text-align: center; }
-  footer address {
+  .footer address {
     text-align: center;
-    width: 100%; }
-    footer address span {
+    width: 100%;
+    font-style: normal; }
+    .footer address span {
       color: var(--white); }
-    footer address a {
+    .footer address a {
       color: var(--light); }
-    footer address * {
+    .footer address * {
       margin-bottom: 8px;
       display: block; }
-
-.button {
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--white);
-  padding: 16px 25px;
-  background-color: var(--blue);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: var(--transition);
-  display: block; }
-  .button:hover {
-    background-color: var(--blue-hover); }
+  .footer-title {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 60px; }
+  .footer-social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .footer-social__link {
+      fill: var(--white);
+      background: rgba(255, 255, 255, 0.1); }
+  .footer-subscribe__button {
+    margin: 20px auto 0 auto; }
+  .footer-subscribe__button-icon {
+    margin-bottom: -10px;
+    transform: translateY(-2px); }
 
 /*# sourceMappingURL=basic.css.map */

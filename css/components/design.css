@@ -8,9 +8,12 @@
   z-index: 10;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid #ECECEC; }
+  .header .container {
+    justify-content: space-between;
+    display: flex; }
   .header__menu {
     width: 100vw;
     height: 100vh;
@@ -199,5 +202,15 @@
       fill: var(--light);
       max-width: 106px;
       height: 60px; }
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  border-radius: 50%;
+  transition: var(--transition); }
 
 /*# sourceMappingURL=design.css.map */

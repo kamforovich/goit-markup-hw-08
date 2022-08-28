@@ -1,3 +1,70 @@
+.modal-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
+.modal-close {
+  width: 30px;
+  height: 30px;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.modal-inner {
+  background: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+  max-width: 450px;
+  position: relative; }
+  .modal-inner .modal-close {
+    position: absolute;
+    right: 8px;
+    top: 8px; }
+  .modal-inner:hover .modal-close-icon {
+    fill: var(--blue); }
+  .modal-inner form label {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+    display: block; }
+  .modal-inner form input {
+    height: 40px;
+    margin-top: 4px; }
+  .modal-inner form textarea {
+    height: 120px;
+    margin-top: 4px; }
+  .modal-inner form .button {
+    padding-left: 54px;
+    padding-right: 54px; }
+  .modal-inner form .agree {
+    display: flex; }
+    .modal-inner form .agree input[type="checkbox"] {
+      display: none; }
+    .modal-inner form .agree input[type="checkbox"] :checked + label {
+      background: red; }
+    .modal-inner form .agree .checkbox {
+      width: 16px;
+      height: 16px;
+      border: 2px solid black;
+      border-radius: 2px; }
+
+.modal_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.03em; }
 
 /*# sourceMappingURL=modal.css.map */

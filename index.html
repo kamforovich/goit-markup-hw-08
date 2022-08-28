@@ -14,34 +14,36 @@
     <body>
         <div class="wraper">
             <header class="header">
-                <a href="index.html" class="logo"><span>Web</span>Studio</a>
-                <div class="header__menu">
-                    <nav class="main-nav">
-                        <ul>
-                            <li><a class="main-nav__link" href="/">Студія</a></li>
-                            <li><a class="main-nav__link" href="/">Портфоліо</a></li>
-                            <li><a class="main-nav__link" href="/">Конаткти</a></li>
-                        </ul>
-                    </nav> 
-                    <div class="header__contacts">
-                        <a class="header__contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-                        <a class="header__contacts-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <div class="container">
+                    <a href="index.html" class="logo"><span>Web</span>Studio</a>
+                    <div class="header__menu">
+                        <nav class="main-nav">
+                            <ul>
+                                <li><a class="main-nav__link" href="/">Студія</a></li>
+                                <li><a class="main-nav__link" href="/">Портфоліо</a></li>
+                                <li><a class="main-nav__link" href="/">Конаткти</a></li>
+                            </ul>
+                        </nav> 
+                        <div class="header__contacts">
+                            <a class="header__contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                            <a class="header__contacts-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </div>
+                        <ul class="header__social">
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">Facebook</a></li>
+                            <li><a href="">Linkedin</a></li>
+                          </ul>
                     </div>
-                    <ul class="header__social">
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Twitter</a></li>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Linkedin</a></li>
-                      </ul>
+                    <div class="burger-button"></div>
                 </div>
-                <div class="burger-button"></div>
             </header>
             <main>
 
                 <section class="section order-service">
                     <div class="container">
                         <h1 class="section__heading">Ефективні рішення для вашого бізнесу</h1>
-                        <button type="button" class="button centered" >Замовити послугу</button>                        
+                        <button type="button" class="button centered modal-open" [data-modal-open]>Замовити послугу</button>                        
                     </div>
 
                 </section>
@@ -126,7 +128,7 @@
                 </section>
                 
             </main>
-            <footer>
+            <footer class="footer">
                 <div class="container">
                     <a href="index.html" class="logo"><span>Web</span>Studio</a>
                     <address>
@@ -136,29 +138,59 @@
                     </address>
                     <section class="footer-social">
                         <h2 class="footer-title">приєднуйтесь</h2>
-                        <a class="footer-social__link" href="javascript:void(0);">
+                        <a class="footer-social__link social-link" href="javascript:void(0);">
                             <svg width="20" height="20"><use href="#insta"/></svg></a>
-                        <a class="footer-social__link" href="javascript:void(0);">
+                        <a class="footer-social__link social-link" href="javascript:void(0);">
                             <svg width="20" height="18"><use href="#twitter"/></svg></a>
-                        <a class="footer-social__link" href="javascript:void(0);">
+                        <a class="footer-social__link social-link" href="javascript:void(0);">
                             <svg width="11" height="20"><use href="#facebook"/></svg></a>
-                        <a class="footer-social__link" href="javascript:void(0);">
+                        <a class="footer-social__link social-link" href="javascript:void(0);">
                             <svg width="20" height="20"><use href="#linkedin"/></svg></a></a>
                     </section>
                     <section class="footer-subscribe">
                         <h2 class="footer-title">Підпишіться на розсилку</h2>
                         <form action="">
                             <input type="text" placeholder="E-mail">
-                            <button class="footer-subscribe__button button centered" type="submit">Підписатися <svg width="24" height="24" class="footer-subscribe__button-icon"><use xlink:href="#icon-message"/></svg></button>
+                            <button class="footer-subscribe__button button" type="submit">Підписатися <svg width="24" height="24" class="footer-subscribe__button-icon"><use xlink:href="#icon-message"/></svg></button>
                         </form>
                     </section>
                 </div>
             </footer>
         </div>
 
-        <div class="modal-window is-hidden" [data-modal]>
+        <div class="modal-overlay is-hidden" [data-modal]>
             <div class="modal-inner">
-                <div class="close" [data-modal-close]></div>
+                <div class="modal-close " [data-modal-close]>
+                    <svg class="modal-close-icon" width="11" height="11">
+                    <use href="#close"></use>
+                    </svg>
+                </div>
+                <p class="modal_title">Залиште свої дані, ми вам передзвонимо</p>
+                <form action="">
+                    <label>Ім'я
+                        <input type="text">
+                    </label>
+                    <label>Телефон
+                        <input type="text">
+                    </label>
+                    <label>Пошта
+                        <input type="text">
+                    </label>
+                    <label>Коментар
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+                    </label>
+                    
+                    <label for="agree" class="agree">
+                        <input id="agree" type="checkbox">
+                        <span class="checkbox">
+                            <svg width="13" height="10">
+                                <use href="#check"></use>
+                            </svg>
+                        </span>Погоджуюся з розсилкою та приймаю <a href="javascript:void(0);">Умови договору</a>
+                    </label>
+                    
+                    <button type="submit" class="button">Відправити</button>
+                </form>
             </div>
         </div>
 
@@ -170,6 +202,14 @@
             <svg xmlns="http://www.w3.org/2000/svg">
                 <defs>
                 <!-- icons -->
+                    <symbol id="check" viewBox="0 0 13 10" >
+                    <path d="M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z" />
+                    </symbol>
+                    
+                    <symbol id="close" viewBox="0 0 11 11">
+                        <path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" />
+                    </symbol>
+                    
                     <symbol id="icon-message">
                         <path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white"/>
                     </symbol>>
@@ -186,11 +226,11 @@
                 <symbol id="facebook" width="11" height="20" viewBox="0 0 11 20" >
                     <path d="M8.33076 3.32083H10.1566V0.140833C9.8416 0.0975 8.75826 0 7.4966 0C4.8641 0 3.06076 1.65583 3.06076 4.69917V7.5H0.155762V11.055H3.06076V20H6.62243V11.0558H9.40993L9.85243 7.50083H6.6216V5.05167C6.62243 4.02417 6.8991 3.32083 8.33076 3.32083V3.32083Z" />
                 </symbol>
-                <svg id="linkedin" width="20" height="20" viewBox="0 0 20 20">
+                <symbol id="linkedin" width="20" height="20" viewBox="0 0 20 20">
                 <path d="M19.9951 20.0001V19.9993H20.0001V12.6643C20.0001 9.07593 19.2276 6.31177 15.0326 6.31177C13.0159 6.31177 11.6626 7.41843 11.1101 8.4676H11.0517V6.64677H7.07422V19.9993H11.2159V13.3876C11.2159 11.6468 11.5459 9.96343 13.7017 9.96343C15.8259 9.96343 15.8576 11.9501 15.8576 13.4993V20.0001H19.9951Z" />
                 <path d="M0.330078 6.64746H4.47675V20H0.330078V6.64746Z" />
                 <path d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0V0Z" />
-                </svg>
+                </symbol>
             
                     
                 <!-- logotypes -->

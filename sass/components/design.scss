@@ -9,9 +9,13 @@
     z-index: 10;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid #ECECEC;
+    .container {
+        justify-content: space-between;
+        display: flex;
+    }
     &__menu {
         width: 100vw;
         height: 100vh;
@@ -230,4 +234,18 @@
             height: 60px;
         }
     }
+}
+
+
+// SOCIAL LINKS
+
+.social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: var(--transition);
 }

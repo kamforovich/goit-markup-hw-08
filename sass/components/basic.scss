@@ -54,23 +54,19 @@ main {}
     }
 }
 
-footer {
+.footer {
     background: #2F303A;
     padding: 60px 0;
-    &-title {
-        color: var(--white);
-    }
-    &-social {}
-    &-subscribe {}
     .logo {
         color: var(--white);
-        text-align: center;
         margin-bottom: 20px;
+        display: block;
         text-align: center;
     }
     address {
         text-align: center;
         width: 100%;
+        font-style: normal;
         span {color: var(--white);}
         a {color: var(--light);}
         * {
@@ -78,21 +74,32 @@ footer {
             display: block;
         }
     }
+    &-title {
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 60px;
+    }
+    &-social {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        &__link {
+            fill: var(--white);
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+    &-subscribe {
+        &__button {margin: 20px auto 0 auto;}
+        &__button-icon {
+            margin-bottom: -10px;
+            transform: translateY(-2px);
+        }
+    }
 }
 
 
 
-.button {
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--white);
-    padding: 16px 25px;
-    background-color: var(--blue);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: var(--transition);
-    display: block;
-    &:hover {background-color: var(--blue-hover);}
-}
