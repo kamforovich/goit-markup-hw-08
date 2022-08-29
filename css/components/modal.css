@@ -9,7 +9,10 @@
   padding: 0 15px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  opacity: 1;
+  pointer-events: all;
+  transition: 300ms; }
 
 .modal-close {
   width: 30px;
@@ -31,9 +34,10 @@
   .modal-inner .modal-close {
     position: absolute;
     right: 8px;
-    top: 8px; }
-  .modal-inner:hover .modal-close-icon {
-    fill: var(--blue); }
+    top: 8px;
+    cursor: pointer; }
+    .modal-inner .modal-close:hover .modal-close-icon {
+      fill: var(--blue); }
   .modal-inner form label {
     font-weight: 400;
     font-size: 12px;
@@ -48,17 +52,27 @@
   .modal-inner form .button {
     padding-left: 54px;
     padding-right: 54px; }
-  .modal-inner form .agree {
-    display: flex; }
-    .modal-inner form .agree input[type="checkbox"] {
-      display: none; }
-    .modal-inner form .agree input[type="checkbox"] :checked + label {
-      background: red; }
-    .modal-inner form .agree .checkbox {
+  .modal-inner form .custom-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+    .modal-inner form .custom-checkbox__link {
+      color: var(--blue);
+      text-decoration: underline; }
+    .modal-inner form .custom-checkbox__box {
       width: 16px;
       height: 16px;
       border: 2px solid black;
-      border-radius: 2px; }
+      border-radius: 2px;
+      margin-right: 8px; }
+    .modal-inner form .custom-checkbox__icon {
+      margin: 2px 0 0 1px; }
+  .modal-inner form input[type="checkbox"] {
+    display: none; }
+  .modal-inner form input[type="checkbox"]:checked + label .custom-checkbox__box {
+    background: var(--blue);
+    border: transparent; }
 
 .modal_title {
   font-weight: 700;
@@ -66,5 +80,10 @@
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em; }
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition); }
 
 /*# sourceMappingURL=modal.css.map */

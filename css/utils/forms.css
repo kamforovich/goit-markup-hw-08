@@ -1,0 +1,53 @@
+input, textarea {
+  width: 100%;
+  border: 1px solid #D3D3D3;
+  border-radius: 4px;
+  background: transparent;
+  padding: 15px 16px;
+  transition: var(--transition); }
+  input:placeholder, textarea:placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.3); }
+  input:hover, textarea:hover {
+    border-color: var(--blue); }
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  padding: 16px 25px;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: var(--transition);
+  display: block; }
+  .button:hover {
+    background-color: var(--blue-hover); }
+  .button-grey {
+    color: var(--dark);
+    background-color: #F5F4FA;
+    box-shadow: none; }
+    .button-grey:hover {
+      background-color: var(--blue);
+      color: var(--white);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); }
+
+.custom-label {
+  position: relative; }
+  .custom-label:hover .input-icon {
+    fill: var(--blue); }
+
+.input-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 14px;
+  fill: var(--dark);
+  transition: var(--transition); }
+
+.some-form input {
+  padding-left: 38px; }
+
+/*# sourceMappingURL=forms.css.map */
