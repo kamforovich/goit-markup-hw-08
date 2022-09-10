@@ -20,6 +20,10 @@ h2 {
   color: var(--dark);
   text-align: center;
   margin-bottom: 30px; }
+  @media screen and (min-width: 1170px) {
+    h2 {
+      margin-bottom: 50px;
+      font-size: 36px; } }
 
 .wraper {
   width: 100%;
@@ -32,51 +36,18 @@ h2 {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding: 0 15px;
+  max-width: 1170px;
   margin: 0 auto; }
+  @media screen and (max-width: 1170px) {
+    .container {
+      padding: 0 15px; } }
 
 .section {
   padding: 60px 0; }
   .section__heading {
     width: 100%; }
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding: 94px 0; } }
-.footer {
-  background: #2F303A;
-  padding: 60px 0; }
-  .footer .logo {
-    color: var(--white);
-    margin-bottom: 20px;
-    display: block;
-    padding-left: 0; }
-  .footer address {
-    width: 100%;
-    font-style: normal; }
-    .footer address span {
-      color: var(--white); }
-    .footer address a {
-      color: var(--light); }
-    .footer address * {
-      margin-bottom: 8px;
-      display: block; }
-  .footer-title {
-    color: var(--white);
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    width: 100%;
-    margin-bottom: 20px; }
-  .footer-social {
-    display: flex;
-    flex-flow: row wrap; }
-    .footer-social__link {
-      fill: var(--white);
-      background: rgba(255, 255, 255, 0.1); }
-  .footer-subscribe__button-icon {
-    margin-bottom: -10px;
-    transform: translateY(-2px); }
+  @media screen and (min-width: 1170px) {
+    .section {
+      padding: 94px 0; } }
 
 /*# sourceMappingURL=basic.css.map */

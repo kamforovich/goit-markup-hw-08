@@ -1,0 +1,118 @@
+// OUR TEAM
+
+.our-team {
+    background-color: #F5F4FA;
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    &__team-item-photo {
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
+    }
+    &__team-item {
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        padding-bottom: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+        &-name {
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+        &-position {
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--light);
+        }
+        &-links {
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+            a {
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 5px;
+            }
+        }
+        @media screen and (min-width:1140px) {
+            margin-bottom: 0;
+        }
+    }
+    &__social-link {
+        svg {fill: var(--light);}
+        &:hover {
+            background-color: var(--blue);
+            svg {fill: var(--white);}
+        }
+    }
+
+}
+
+// --------------- MIN-768 MAX-1200---------------
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .our-team__team-item:nth-of-type(even) {
+        margin-left: 30px;
+    }
+}
+
+// --------------- MIN-768 ---------------
+
+@media screen and (min-width:768px) {
+    .our-team {
+        &__team-item {
+            max-width: 354px;
+        }
+    }
+}
+
+// --------------- MAX-768 ---------------
+
+@media screen and (max-width:768px) {
+    .our-team__team-item:last-child {margin-bottom: 0;} 
+    .our-team {
+        .container {
+            justify-content: center;
+        }
+        &__team-item {
+        max-width: 460px;
+        }
+    }
+}
+
+// --------------- MAX-1200 ---------------
+
+@media screen and (max-width:1200px) {
+    .our-team {
+        .container {
+            justify-content: center;
+        }
+    }
+}
+
+// --------------- MIN-1200 ---------------
+
+@media screen and (min-width:1200px) {
+    .our-team {
+        .container {
+            justify-content: space-between;
+        }
+        &__team-item {
+            max-width: 270px;
+        }
+    }
+}
+

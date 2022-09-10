@@ -24,6 +24,10 @@ h2 {
     color: var(--dark);
     text-align: center;
     margin-bottom: 30px;
+    @media screen and (min-width:1170px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        }  
 }
 
 .wraper {
@@ -41,63 +45,18 @@ h2 {
 
 .container {
     width: 100%;
-    max-width: 1200px;
-    padding: 0 15px;
+    max-width: 1170px;
     margin: 0 auto;
+    @media screen and (max-width:1170px) {padding: 0 15px;} 
 }
 
 .section {
     padding: 60px 0;
     &__heading {width: 100%;}
-}
-@media screen and (min-width:1200px) {
-    .section {
-        padding: 94px 0;
-    }
+    @media screen and (min-width:1170px) {padding: 94px 0;}    
 }
 
-.footer {
-    background: #2F303A;
-    padding: 60px 0;
-    .logo {
-        color: var(--white);
-        margin-bottom: 20px;
-        display: block;
-        padding-left: 0;
-    }
-    address {
-        width: 100%;
-        font-style: normal;
-        span {color: var(--white);}
-        a {color: var(--light);}
-        * {
-            margin-bottom: 8px;
-            display: block;
-        }
-    }
-    &-title {
-        color: var(--white);
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    &-social {
-        display: flex;
-        flex-flow: row wrap;
-        &__link {
-            fill: var(--white);
-            background: rgba(255, 255, 255, 0.1);
-        }
-    }
-    &-subscribe {
-        &__button-icon {
-            margin-bottom: -10px;
-            transform: translateY(-2px);
-        }
-    }
-}
+
 
 
 

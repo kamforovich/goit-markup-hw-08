@@ -17,9 +17,9 @@
                 <div class="container">
                     <a href="index.html" class="logo"><span>Web</span>Studio</a>
                     <div class="header__menu">
-                        <nav class="main-nav">
+                        <nav class="main-nav"  role="navigation">
                             <ul class="main-nav__ul">
-                                <li><a class="main-nav__link" href="javascript:void(0);">Студія</a></li>
+                                <li><a class="main-nav__link active" href="javascript:void(0);">Студія</a></li>
                                 <li><a class="main-nav__link" href="portfolio.html">Портфоліо</a></li>
                                 <li><a class="main-nav__link" href="javascript:void(0);">Конаткти</a></li>
                             </ul>
@@ -59,7 +59,7 @@
                                 <svg width="70" height="70"><use href="#antena"></use></svg>
                             </div>
                             <h3 class="feature__heading">УВАГА ДО ДЕТАЛЕЙ</h3>
-                            <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                            <p class="feature__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                         </div>                        
 
                         <div class="feature">
@@ -67,7 +67,7 @@
                                 <svg width="70" height="70"><use href="#clock"></use></svg>
                             </div>
                             <h3 class="feature__heading">ПУНКТУАЛЬНІСТЬ</h3>
-                            <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                            <p class="feature__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                         </div>                        
 
                         <div class="feature">
@@ -75,7 +75,7 @@
                                 <svg width="70" height="70"><use href="#diagrama"></use></svg>
                             </div>
                             <h3 class="feature__heading">ПЛАНУВАННЯ</h3>
-                            <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+                            <p class="feature__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                         </div>     
 
                         <div class="feature">
@@ -83,7 +83,7 @@
                                 <svg width="70" height="70"><use href="#astronaut"></use></svg>
                             </div>
                             <h3 class="feature__heading">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                            <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                            <p class="feature__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                         </div>         
                         
                         
@@ -115,7 +115,12 @@
 
                         <div class="our-team__team-item">
                             <div class="our-team__team-item-photo">
-                                <img src="images/team-item-1.jpg" alt="">
+                                <picture>
+                                    <source srcset="images/team/team-item-1-s.jpg 1x, images/team/team-item-1-s@2x.jpg 2x" media="(max-width:460px)" />
+                                    <source srcset="images/team/team-item-1-tab.jpg 1x, images/team/team-item-1-tab@2x.jpg 2x" media="(max-width:768px)" />
+                                    <source  srcset="images/team/team-item-1-desk.jpg 1x, images/team/team-item-1-desk@2x.jpg 2x" media="(min-width:768px)" />
+                                    <img src="images/team/team-item-1-s.jpg" alt="">
+                                </picture>
                             </div>
                             <p class="our-team__team-item-name">Ігор Дем'яненко</p>
                             <p class="our-team__team-item-position">Product Designer</p>
@@ -133,7 +138,12 @@
                         
                         <div class="our-team__team-item">
                             <div class="our-team__team-item-photo">
-                                <img src="images/team-item-2.jpg" alt="">
+                                <picture>
+                                    <source srcset="images/team/team-item-2-s.jpg 1x, images/team/team-item-2-s@2x.jpg 2x" media="(max-width:460px)" />
+                                    <source srcset="images/team/team-item-2-tab.jpg 1x, images/team/team-item-2-tab@2x.jpg 2x" media="(max-width:768px)" />
+                                    <source  srcset="images/team/team-item-2-desk.jpg 1x, images/team/team-item-2-desk@2x.jpg 2x" media="(min-width:768px)" />
+                                    <img src="images/team/team-item-1-s.jpg" alt="">
+                                </picture>
                             </div>
                             <p class="our-team__team-item-name">Ольга Рєпіна</p>
                             <p class="our-team__team-item-position">Frontend Developer</p>
@@ -150,7 +160,12 @@
                         </div>  
                         <div class="our-team__team-item">
                             <div class="our-team__team-item-photo">
-                                <img src="images/team-item-3.jpg" alt="">
+                                <picture>
+                                    <source srcset="images/team/team-item-3-s.jpg 1x, images/team/team-item-3-s@2x.jpg 2x" media="(max-width:460px)" />
+                                    <source srcset="images/team/team-item-3-tab.jpg 1x, images/team/team-item-3-tab@2x.jpg 2x" media="(max-width:768px)" />
+                                    <source  srcset="images/team/team-item-3-desk.jpg 1x, images/team/team-item-3-desk@2x.jpg 2x" media="(min-width:768px)" />
+                                    <img src="images/team/team-item-1-s.jpg" alt="">
+                                </picture>
                             </div>
                             <p class="our-team__team-item-name">Микола Тарасов</p>
                             <p class="our-team__team-item-position">Marketing</p>
@@ -167,7 +182,12 @@
                         </div> 
                         <div class="our-team__team-item">
                             <div class="our-team__team-item-photo">
-                                <img src="images/team-item-4.jpg" alt="">
+                                <picture>
+                                    <source srcset="images/team/team-item-4-s.jpg 1x, images/team/team-item-4-s@2x.jpg 2x" media="(max-width:460px)" />
+                                    <source srcset="images/team/team-item-4-tab.jpg 1x, images/team/team-item-4-tab@2x.jpg 2x" media="(max-width:768px)" />
+                                    <source  srcset="images/team/team-item-4-desk.jpg 1x, images/team/team-item-4-desk@2x.jpg 2x" media="(min-width:768px)" />
+                                    <img src="images/team/team-item-1-s.jpg" alt="">
+                                </picture>
                             </div>
                             <p class="our-team__team-item-name">Михайло Єрмаков</p>
                             <p class="our-team__team-item-position">UI Designer</p>
@@ -206,7 +226,7 @@
             </main>
             <footer class="footer">
                 <div class="container">
-                    <section>
+                    <section class="footer-info">
                         <a href="index.html" class="logo"><span>Web</span>Studio</a>
                         <address>
                             <span>м. Київ, пр-т Лесі Українки, 26</span>
@@ -286,12 +306,12 @@
                 <defs>
                 <!-- icons -->
                 <symbol id="smartphone" viewBox="0 0 10 14" >
-                    <path d="M8.5 0H1.5C0.672848 0 0 0.588742 0 1.3125V12.6875C0 13.4113 0.672848 14 1.5 14H8.5C9.32715 14 10 13.4113 10 12.6875V1.3125C10 0.588742 9.32715 0 8.5 0ZM1.5 0.875H8.5C8.77588 0.875 9 1.07111 9 1.3125V10.5H1V1.3125C1 1.07111 1.22412 0.875 1.5 0.875ZM8.5 13.125H1.5C1.22412 13.125 1 12.9289 1 12.6875V11.375H9V12.6875C9 12.9289 8.77588 13.125 8.5 13.125Z" fill="#757575"/>
+                    <path d="M8.5 0H1.5C0.672848 0 0 0.588742 0 1.3125V12.6875C0 13.4113 0.672848 14 1.5 14H8.5C9.32715 14 10 13.4113 10 12.6875V1.3125C10 0.588742 9.32715 0 8.5 0ZM1.5 0.875H8.5C8.77588 0.875 9 1.07111 9 1.3125V10.5H1V1.3125C1 1.07111 1.22412 0.875 1.5 0.875ZM8.5 13.125H1.5C1.22412 13.125 1 12.9289 1 12.6875V11.375H9V12.6875C9 12.9289 8.77588 13.125 8.5 13.125Z"/>
                     </symbol>
                     
 
                     <symbol id="envelop" viewBox="0 0 14 10">
-                    <path d="M12.6875 0H1.31251C0.588747 0 0 0.560711 0 1.25001V8.74999C0 9.43929 0.588747 10 1.31251 10H12.6875C13.4113 10 14 9.43929 14 8.74999V1.25001C14 0.560711 13.4113 0 12.6875 0ZM12.6875 0.833329C12.7469 0.833329 12.8035 0.845074 12.8552 0.865586L7 5.69865L1.14479 0.865586C1.19649 0.845102 1.25304 0.833329 1.31248 0.833329H12.6875ZM12.6875 9.16664H1.31251C1.07112 9.16664 0.874996 8.97989 0.874996 8.74997V1.74601L6.71331 6.56493C6.79578 6.63287 6.89789 6.66666 7 6.66666C7.10211 6.66666 7.20422 6.6329 7.28669 6.56493L13.125 1.74601V8.74999C13.125 8.97989 12.9289 9.16664 12.6875 9.16664Z" fill="#757575"/>
+                    <path d="M12.6875 0H1.31251C0.588747 0 0 0.560711 0 1.25001V8.74999C0 9.43929 0.588747 10 1.31251 10H12.6875C13.4113 10 14 9.43929 14 8.74999V1.25001C14 0.560711 13.4113 0 12.6875 0ZM12.6875 0.833329C12.7469 0.833329 12.8035 0.845074 12.8552 0.865586L7 5.69865L1.14479 0.865586C1.19649 0.845102 1.25304 0.833329 1.31248 0.833329H12.6875ZM12.6875 9.16664H1.31251C1.07112 9.16664 0.874996 8.97989 0.874996 8.74997V1.74601L6.71331 6.56493C6.79578 6.63287 6.89789 6.66666 7 6.66666C7.10211 6.66666 7.20422 6.6329 7.28669 6.56493L13.125 1.74601V8.74999C13.125 8.97989 12.9289 9.16664 12.6875 9.16664Z"/>
                     </symbol>
                     
                     <symbol id="check" fill="white" viewBox="0 0 13 10" >

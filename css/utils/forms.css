@@ -11,6 +11,12 @@ input, textarea {
     color: rgba(255, 255, 255, 0.3); }
   input:hover, textarea:hover {
     border-color: var(--blue); }
+  input:focus, textarea:focus {
+    border-color: var(--blue);
+    outline: none; }
+
+.custom-label:focus svg {
+  fill: var(--blue); }
 
 .button {
   font-weight: 700;
